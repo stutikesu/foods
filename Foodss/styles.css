@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff6347;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.menu-section, .about-section, .contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-section h2, .about-section h2, .contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea, .contact-section button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background: #ff4500;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background: #ff6347;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    .hero img {
+        max-width: 90%;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .menu-section h2, .about-section h2, .contact-section h2 {
+        font-size: 18px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+
+    .contact-section input, .contact-section textarea, .contact-section button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
